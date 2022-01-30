@@ -59,7 +59,7 @@ export default function PaginaInicial() {
           <Box
             onSubmit={function (event) {
               event.preventDefault();
-              route.push("/chat");
+              route.push(`/chat?username=${username}`);
             }}
             as="form"
             styleSheet={{
